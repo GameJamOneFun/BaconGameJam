@@ -1,8 +1,10 @@
+import greenfoot.*;
+
 public class Explorer extends Actor
 {
   private double lightRadius;
   private int flashLights;
-  private boolean inView;
+  //private boolean inView;
   
   public Explorer()
   {
@@ -31,14 +33,37 @@ public class Explorer extends Actor
     this.flashLights = l;
   }
   
-  public boolean getInView()
+  /*public boolean getInView()
   {
     return this.inView;
-  }
+  }*/
   
-  public void setInView(boolean v)
+  /*public void setInView(boolean v)
   {
     this.inView = v;
+  }*/
+  
+  public void move()
+  {
+    int x = getY();
+    int y = getX();
+    
+    if(Greenfoot.isKeyDown("up"))
+    {
+      setLocation(x, y-1);
+    }
+    if(Greenfoot.isKeyDown("down"))
+    {
+      setLocation(x, y+1);
+    }
+    if(Greenfoot.isKeyDown("left"))
+    {
+      setLocation(x-1, y);
+    }
+    if(Greenfoot.isKeyDown("right"))
+    {
+      setLocation(x+1, y);
+    }
   }
   
 }
