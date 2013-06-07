@@ -60,20 +60,4 @@ public class Square extends Actor
    {
       this.inView = inView;
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
 }
