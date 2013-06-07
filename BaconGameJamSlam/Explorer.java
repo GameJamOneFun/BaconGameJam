@@ -4,13 +4,20 @@ public class Explorer extends Actor
 {
   private double lightRadius;
   private int flashLights;
+  private int lives;
+  private int count;
   //private boolean inView;
   
   public Explorer()
   {
-    this.inView = false;
+    this.lives = 3;
     this.flashLights = 0;
     this.lightradius = 20.0;
+  }
+  
+  public void act()
+  {
+    moving();
   }
   
   public double getLightRadius()
@@ -43,7 +50,7 @@ public class Explorer extends Actor
     this.inView = v;
   }*/
   
-  public void move()
+  public void moving()
   {
     int x = getY();
     int y = getX();
