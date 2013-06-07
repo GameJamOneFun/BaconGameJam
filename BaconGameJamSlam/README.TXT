@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
+PROJECT TITLE: Lights-Out
+PURPOSE OF PROJECT: BaconGameJam
+VERSION or DATE: June 6, 2013
 HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+AUTHORS: Reece Camper, Tyler Robbins, Miguel Aguilar
+USER INSTRUCTIONS: Play Game
