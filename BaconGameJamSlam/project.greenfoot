@@ -1,10 +1,11 @@
 #Greenfoot properties
-#Fri Jun 07 15:35:22 PDT 2013
+#Fri Jun 07 15:42:54 PDT 2013
+class.Background.superclass=greenfoot.World
+mainWindow.width=1382
+package.numDependencies=0
 version=2.4.0
 project.charset=UTF-8
 mainWindow.y=22
-mainWindow.x=-8
-package.numDependencies=0
-mainWindow.width=1382
-mainWindow.height=754
 package.numTargets=0
+mainWindow.x=-8
+mainWindow.height=754
