@@ -3,14 +3,16 @@ import java.awt.*;
 
 public class Flashlight extends Actor
 {
-    int j = 0;
+    int radius = 0;
+    int x, y = 250;
+
     public void act() 
     {
-        createPortal(250, 250, j); //Code credit from greenfoot user 'danpost'. All credit goes to him!
+        createPortal(x, y, radius); //Code credit from greenfoot user 'danpost'. All credit goes to him!
     }
-    
+
     public void createPortal(int x, int y, int r) // x and y are the center and r  is the radius  
-    {  
+    {
         GreenfootImage img = getImage();  
         Color color = Color.white;  
         Color trans = new Color(0, 0, 0, 0);  
@@ -26,5 +28,19 @@ public class Flashlight extends Actor
         }  
         setImage(img);  
     }
-    
+
+    public int getRadius()
+    {
+        return this.radius;
+    }
+
+    public void setRadius(int radius)
+    {
+        this.radius = radius;
+    }
+
+    public void increaseRadius(int incrRadSize)
+    {
+        this.radius += incrRadSize;
+    }
 }
