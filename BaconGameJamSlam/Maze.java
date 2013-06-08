@@ -1,3 +1,5 @@
+import greenfoot.*;
+
 public class Maze extends Actor
 {
     private int rows;
