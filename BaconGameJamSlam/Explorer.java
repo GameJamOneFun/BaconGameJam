@@ -22,7 +22,7 @@ public class Explorer extends Actor
         while(count!=0)
         {
             timeCounter = (timeCounter + 1) % 60;
-            flashlight.shrink();
+            //flashlight.shrink();
             //this.lightRadius-=1.5;
 
             if(timeCounter==0)
@@ -31,12 +31,12 @@ public class Explorer extends Actor
             }
         }
 
-        if(this.location().equals(this.battery.location()))
-        {
-            batNum++;
-            this.lightRadius = 90;
-            count = 1;
-        }
+        //if(this.location().equals(this.battery.location()))
+        //{
+           //batNum++;
+            //this.lightRadius = 90;
+            //count = 1;
+        //}
     }
 
     public int getBatNum()
