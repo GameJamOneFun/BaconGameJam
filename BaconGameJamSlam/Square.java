@@ -6,7 +6,7 @@ public class Square extends Actor
     private int row;
     private int col;
     private Battery batt;
-    private boolean inView;
+    //private boolean inView;
 
     private final static int SQUARE_UP = 0; // Upper wall
     private final static int SQUARE_DOWN = 1; //Bottom wall
@@ -52,7 +52,7 @@ public class Square extends Actor
         this.batt = batt;
     }
 
-    public boolean InView()
+    /*public boolean InView()
     {
         return this.inView;
     }
@@ -60,5 +60,5 @@ public class Square extends Actor
     public void setInView(boolean inView)
     {
         this.inView = inView;
-    }
+    }*/
 }
