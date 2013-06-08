@@ -15,7 +15,7 @@ public class Square extends Actor
     private final static int SQUARE_SIZE = 50; // 50 for the number of pixels
 
     // Constructor to make a Square with walls and placement in the maze.
-    public Square(boolean up, boolean down, boolean left, boolean right, int row, int col, boolean inView)
+    public Square(boolean up, boolean down, boolean left, boolean right, int row, int col)//, boolean inView)
     {
         this.walls[SQUARE_UP] = up;
         this.walls[SQUARE_DOWN] = down;
@@ -23,7 +23,7 @@ public class Square extends Actor
         this.walls[SQUARE_RIGHT] = right;
         this.row = row;
         this.col = col;
-        this.inView = inView;
+        //this.inView = inView;
     }
 
     public Square(int row, int col)

@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=up\ down\ left\ right\ row\ col\ inView
-comment0.target=Square(boolean,\ boolean,\ boolean,\ boolean,\ int,\ int,\ boolean)
+comment0.params=up\ down\ left\ right\ row\ col
+comment0.target=Square(boolean,\ boolean,\ boolean,\ boolean,\ int,\ int)
 comment1.params=row\ col
 comment1.target=Square(int,\ int)
 comment2.params=
@@ -11,8 +11,4 @@ comment4.params=
 comment4.target=Battery\ getBattery()
 comment5.params=batt
 comment5.target=void\ setBattery(Battery)
-comment6.params=
-comment6.target=boolean\ InView()
-comment7.params=inView
-comment7.target=void\ setInView(boolean)
-numComments=8
+numComments=6
