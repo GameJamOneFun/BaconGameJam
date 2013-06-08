@@ -4,7 +4,7 @@ public class Battery extends Actor
 {
     private boolean found;
 
-    public Battery(Maze maze)
+    public Battery()
     {
 
     }
@@ -25,5 +25,10 @@ public class Battery extends Actor
         int row = getY();
 
         return (new Square(row, col));
+    }
+    
+    public void checkCollision()
+    {
+        
     }
 }
