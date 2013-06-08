@@ -8,8 +8,6 @@ public class Explorer extends Actor
     private Flashlight flashlight;
     private int count;
     private int timeCounter=0;
-    private int flashLights;
-    private int batteries;
     
     public Explorer(Maze maze)
     {
@@ -32,15 +30,17 @@ public class Explorer extends Actor
             }
         }
 
-        //if(this.location().equals())
-        //{
-
-        //}
+        if(this.location().equals(this.battery.location()))
+        {
+            batNum++;
+            this.lightRadius = 90;
+            count = 1;
+        }
     }
 
     public int getBatNum()
     {
-        return this.flashLights;
+        return this.batNum;
     }
 
     public Square location()
@@ -49,16 +49,6 @@ public class Explorer extends Actor
         int row = getY();
 
         return (new Square(row, col));
-    }
-
-    public int getBatteries()
-    {
-        return this.batteries;
-    }
-
-    public void setBatteries(int l)
-    {
-        this.batteries = l;
     }
 
     public void moving()
