@@ -6,6 +6,8 @@ public class Flashlight extends Actor
     int radius = 250;
     int incRadSize = 50;
     int x, y;
+    int count=1;
+    int timeCounter=0;
     //Explorer e;
 
     public void act() 
@@ -59,6 +61,10 @@ public class Flashlight extends Actor
     
     public void shrink()
     {
-        radius -= 1;
+        while(count!=0)
+        {
+            timeCounter = (timeCounter + 1) % 60;
+            radius -= 1;
+        }
     }
 }
