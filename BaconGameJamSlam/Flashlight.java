@@ -4,6 +4,7 @@ import java.awt.*;
 public class Flashlight extends Actor
 {
     int radius = 250;
+    int incRadSize = 50;
     int x, y;
     //Explorer e;
 
@@ -45,7 +46,7 @@ public class Flashlight extends Actor
         this.radius = radius;
     }
 
-    public void increaseRadius(int incrRadSize)
+    public void increaseRadius()
     {
         this.radius += incrRadSize;
     }
