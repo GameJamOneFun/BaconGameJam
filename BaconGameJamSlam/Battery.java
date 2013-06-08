@@ -1,3 +1,5 @@
+import greenfoot.*;
+
 public class Battery extends Actor
 {
   private boolean found;
