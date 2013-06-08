@@ -6,7 +6,7 @@ public class Explorer extends Actor
     private int batNum;
     private Battery battery;
     private Flashlight flashlight;
-    private int count;
+    private int count=1;
     private int timeCounter=0;
     
     public Explorer(Maze maze)
