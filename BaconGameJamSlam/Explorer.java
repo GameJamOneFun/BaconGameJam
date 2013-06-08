@@ -3,16 +3,16 @@ import greenfoot.*;
 public class Explorer extends Actor
 {
   private double lightRadius;
-  private int flashLights;
-  private int lives;
+  private int batNum;
+  private Battery battery;
+  private Flashlight flashlight;
   private int count;
   private int timeCounter=0;
   
   public Explorer()
   {
-    this.lives = 3;
-    this.flashLights = 0;
-    this.lightradius = 90.0;
+    this.batNum = 0;
+    this.lightRadius = 90.0;
   }
   
   public void act()
@@ -30,13 +30,15 @@ public class Explorer extends Actor
       }
     }
     
-    if(this.location().equals())
+    if(this.location().equals(battery.location()))
     {
-      
+      this.batNum++;
+      this.lightRadius = 90.0;
+      count = 1;
     }
   }
   
-  public double getLightRadius()
+  /*public double getLightRadius()
   {
     return this.lightRadius;
   }
@@ -44,16 +46,11 @@ public class Explorer extends Actor
   public void setLightRadius(double r)
   {
     this.lightRadius = r;
-  }
+  }*/
   
-  public int getFlashLights()
+  public int getbatNum()
   {
     return this.flashLights;
-  }
-  
-  public void setFlashLights(int l)
-  {
-    this.flashLights = l;
   }
   
   public Square location()
