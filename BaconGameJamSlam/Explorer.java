@@ -9,7 +9,7 @@ public class Explorer extends Actor
   private int count;
   private int timeCounter=0;
   
-  public Explorer()
+  public Explorer(Maze maze)
   {
     this.batNum = 0;
     this.lightRadius = 90.0;
