@@ -6,18 +6,34 @@ public class Explorer extends Actor
   private int flashLights;
   private int lives;
   private int count;
-  //private boolean inView;
+  private int timeCounter=0;
   
   public Explorer()
   {
     this.lives = 3;
     this.flashLights = 0;
-    this.lightradius = 20.0;
+    this.lightradius = 90.0;
   }
   
   public void act()
   {
     moving();
+    
+    while(count!=0)
+    {
+      timeCounter = (timeCounter + 1) % 60;
+      this.lightRadius-=1.5;
+      
+      if(timeCounter==0)
+      {
+        count=0;
+      }
+    }
+    
+    if(this.location().equals())
+    {
+      
+    }
   }
   
   public double getLightRadius()
@@ -40,20 +56,18 @@ public class Explorer extends Actor
     this.flashLights = l;
   }
   
-  /*public boolean getInView()
+  public Square location()
   {
-    return this.inView;
-  }*/
-  
-  /*public void setInView(boolean v)
-  {
-    this.inView = v;
-  }*/
-  
+    int col = getX();
+    int row = getY();
+    
+    return (new Square(row, col));
+  }
+    
   public void moving()
   {
-    int x = getY();
-    int y = getX();
+    int x = getX();
+    int y = getY();
     
     if(Greenfoot.isKeyDown("up"))
     {
