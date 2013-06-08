@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class Flashlight extends Actor
 {
-    it j = 0;
+    int j = 0;
     public void act() 
     {
         createPortal(250, 250, j); //Code credit from greenfoot user 'danpost'. All credit goes to him!

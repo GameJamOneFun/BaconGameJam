@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=maze\ rows\ cols
+comment0.target=Maze(Square[][],\ int,\ int)
+comment1.params=row\ col
+comment1.target=Square\ getSquare(int,\ int)
+comment2.params=
+comment2.target=int\ rows()
+comment3.params=
+comment3.target=int\ cols()
+comment4.params=e
+comment4.target=void\ setExplorer(Explorer)
+comment5.params=key
+comment5.target=void\ explorerMove(int)
+numComments=6
