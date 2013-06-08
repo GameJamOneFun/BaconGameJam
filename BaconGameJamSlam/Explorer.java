@@ -2,17 +2,14 @@ import greenfoot.*;
 
 public class Explorer extends Actor
 {
-    //private double lightRadius;
     private int batNum;
-    private Battery battery;
-    private Flashlight flashlight;
+    private Flashlight flashlight = ((Flashlight) getWorld().getObjects(Flashlight.class).get(0));
     private int count=1;
     private int timeCounter=0;
     
     public Explorer()//Maze maze)
     {
-        this.batNum = 0;
-        //this.lightRadius = 90.0;
+        
     }
 
     public void act()
@@ -30,13 +27,6 @@ public class Explorer extends Actor
                 count=0;
             }
         }
-
-        //if(this.location().equals(this.battery.location()))
-        //{
-           //batNum++;
-            //this.lightRadius = 90;
-            //count = 1;
-        //}
     }
 
     public int getBatNum()
@@ -74,14 +64,4 @@ public class Explorer extends Actor
             setLocation(x+1, y);
         }
     }
-    
-    /*public double getLightRadius()
-    {
-    return this.lightRadius;
-    }
-
-    public void setLightRadius(double r)
-    {
-    this.lightRadius = r;
-    }*/
 }
