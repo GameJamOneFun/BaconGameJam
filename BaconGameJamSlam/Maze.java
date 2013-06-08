@@ -34,10 +34,10 @@ public class Maze extends Actor
         this.explorer = e;
     }
 
-    public void explorerMove(int key)
+    /*public void explorerMove(int key)
     {
         this.explorer.move(key);
-    }
+    }*/
 
     
     
