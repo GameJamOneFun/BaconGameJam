@@ -2,40 +2,20 @@ import greenfoot.*;
 
 public class Explorer extends Actor
 {
-<<<<<<< HEAD
     private double lightRadius;
-    private int batteries;
-    private int lives;
+    private int batNum;
+    private Battery battery;
+    private Flashlight flashlight;
     private int count;
     private int timeCounter=0;
-
-    public Explorer()
-=======
-  private double lightRadius;
-  private int batNum;
-  private Battery battery;
-  private Flashlight flashlight;
-  private int count;
-  private int timeCounter=0;
-  
-  public Explorer(Maze maze)
-  {
-    this.batNum = 0;
-    this.lightRadius = 90.0;
-  }
-  
-  public void act()
-  {
-    moving();
+    private int flashLights;
+    private int batteries;
     
-    while(count!=0)
->>>>>>> f5f9c004ded5ff960c0fac120a747e8a72adde81
+    public Explorer(Maze maze)
     {
-        this.lives = 3;
-        this.batteries = 0;
+        this.batNum = 0;
         this.lightRadius = 90.0;
     }
-<<<<<<< HEAD
 
     public void act()
     {
@@ -58,54 +38,17 @@ public class Explorer extends Actor
         //}
     }
 
-    public double getLightRadius()
-=======
-    
-    if(this.location().equals(battery.location()))
+    public int getBatNum()
     {
-      this.batNum++;
-      this.lightRadius = 90.0;
-      count = 1;
-    }
-  }
-  
-  /*public double getLightRadius()
-  {
-    return this.lightRadius;
-  }
-  
-  public void setLightRadius(double r)
-  {
-    this.lightRadius = r;
-  }*/
-  
-  public int getbatNum()
-  {
-    return this.flashLights;
-  }
-  
-  public Square location()
-  {
-    int col = getX();
-    int row = getY();
-    
-    return (new Square(row, col));
-  }
-    
-  public void moving()
-  {
-    int x = getX();
-    int y = getY();
-    
-    if(Greenfoot.isKeyDown("up"))
->>>>>>> f5f9c004ded5ff960c0fac120a747e8a72adde81
-    {
-        return this.lightRadius;
+        return this.flashLights;
     }
 
-    public void setLightRadius(double r)
+    public Square location()
     {
-        this.lightRadius = r;
+        int col = getX();
+        int row = getY();
+
+        return (new Square(row, col));
     }
 
     public int getBatteries()
@@ -116,14 +59,6 @@ public class Explorer extends Actor
     public void setBatteries(int l)
     {
         this.batteries = l;
-    }
-
-    public Square location()
-    {
-        int col = getX();
-        int row = getY();
-
-        return (new Square(row, col));
     }
 
     public void moving()
@@ -148,5 +83,14 @@ public class Explorer extends Actor
             setLocation(x+1, y);
         }
     }
+    
+    /*public double getLightRadius()
+    {
+    return this.lightRadius;
+    }
 
+    public void setLightRadius(double r)
+    {
+    this.lightRadius = r;
+    }*/
 }

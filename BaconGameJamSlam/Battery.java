@@ -18,4 +18,12 @@ public class Battery extends Actor
     {
         found = true;
     }
+    
+    public Square location()
+    {
+        int col = getX();
+        int row = getY();
+
+        return (new Square(row, col));
+    }
 }
