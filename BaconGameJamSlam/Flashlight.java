@@ -1,3 +1,6 @@
+import greenfoot.*;
+import java.awt.*;
+
 public class Flashlight extends Actor
 {
     it j = 0;
